@@ -10,7 +10,7 @@
     <dubbo:application name="consumer" owner="yingjun"/>
 
     <!-- 使用zookeeper注册中心暴露服务地址 -->
-    <dubbo:registry protocol="zookeeper" address="zookeeper://192.168.xx.xx:2181?backup=192.168.xx.xx:2182,192.168.xx.xx:2183"/>
+    <dubbo:registry protocol="zookeeper" address="zookeeper://localhost:2181?backup=localhost:2182,localhost:2183"/>
 
     <!-- 用户服务接口 -->
     <!-- retries表示失败后的重试次数，timeout表示超时时间，actives表示客户端并发限制数 服务端并发控制可用executes参数 -->
